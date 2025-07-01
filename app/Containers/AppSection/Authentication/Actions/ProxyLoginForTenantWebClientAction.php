@@ -72,7 +72,7 @@ class ProxyLoginForTenantWebClientAction extends ParentAction
                 $hotelData = array();
                 if (count($hotel) > 0) {
                     for ($i = 0; $i < count($hotel); $i++) {
-                        $hotelData[$i]['label'] = $hotel[$i]->name;
+                        $hotelData[$i]['label'] = $hotel[$i]->name; 
                         $hotelData[$i]['value'] = $this->encode($hotel[$i]->id);
                     }
                     $responseContent['hotel'] = $hotelData;
@@ -91,7 +91,7 @@ class ProxyLoginForTenantWebClientAction extends ParentAction
             $returnData['message'] = "User Role Not Active";
             http_response_code(500);
             echo json_encode($returnData);
-            exit();
+            exit(); 
         }
     }
     
