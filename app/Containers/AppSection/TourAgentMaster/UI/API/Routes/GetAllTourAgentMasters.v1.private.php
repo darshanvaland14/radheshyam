@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @apiGroup           TourAgentMaster
+ * @apiName            getAllTourAgentMastermasters
+ *
+ * @api                {GET} /v1/getallTourAgentMastermasters Get All TourAgentMaster
+ * @apiDescription     Endpoint description here...
+ *
+ * @apiVersion         1.0.0
+ * @apiPermission      Authenticated ['permissions' => '', 'TourAgentMasters' => '']
+ *
+ * @apiHeader          {String} accept=application/json
+ * @apiHeader          {String} authorization=Bearer
+ *
+ * @apiParam           {String} parameters here...
+ *
+ * @apiSuccessExample  {json} Success-Response:
+ * HTTP/1.1 200 OK
+ * {
+ *     // Insert the response of the request here...
+ * }
+ */
+
+use App\Containers\AppSection\TourAgentMaster\UI\API\Controllers\Controller;
+use Illuminate\Support\Facades\Route;
+
+Route::get('getallTourAgentMaster', [Controller::class, 'GetAllTourAgentMaster'])
+->middleware(['auth:tenant']);

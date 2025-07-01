@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Containers\{{section-name}}\{{container-name}}\Tests\Functional;
+
+use App\Containers\{{section-name}}\{{container-name}}\Tests\TestCase;
+
+class {{class-name}} extends TestCase
+{
+    public function test(): void
+    {
+    }
+}

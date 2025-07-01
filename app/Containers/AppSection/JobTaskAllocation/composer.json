@@ -1,0 +1,6 @@
+{
+    "name": "apiato/jobtaskallocation",
+    "description": "JobTaskAllocation Container for apiato.",
+    "require": {
+    }
+}

@@ -1,0 +1,9 @@
+<?php
+
+namespace App\Containers\{{section-name}}\{{container-name}}\Values;
+
+use App\Ship\Parents\Values\Value as ParentValue;
+
+class {{class-name}} extends ParentValue
+{
+}

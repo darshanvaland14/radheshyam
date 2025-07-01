@@ -1,0 +1,17 @@
+{
+    "name": "apiato/container-installer",
+    "description": "A Composer plugin for installing Apiato Containers (of type apiato-container).",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "apiato\\installer\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "apiato\\installer\\ContainerInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "^2.0"
+    }
+}

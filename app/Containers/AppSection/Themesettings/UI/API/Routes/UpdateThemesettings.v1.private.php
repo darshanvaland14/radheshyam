@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @apiGroup           Themesettings
+ * @apiName            updatethemesettings
+ *
+ * @api                {POST} /v1/updatethemesettings/{id} Update Themesettings By ID
+ * @apiDescription     Update Themesettings By ID
+ *
+ * @apiVersion         1.0.0
+ * @apiPermission      none
+ *
+ * @apiParam           {String}  parameters here..
+ *
+ * @apiSuccessExample  {json}  Success-Response:
+ * HTTP/1.1 200 OK
+{
+  // Insert the response of the request here...
+}
+ */
+
+use App\Containers\AppSection\Themesettings\UI\API\Controllers\Controller;
+use Illuminate\Support\Facades\Route;
+
+Route::post('updatethemesettings/{id}', [Controller::class, 'updateThemesettings'])
+    ->middleware(['auth:tenant']);

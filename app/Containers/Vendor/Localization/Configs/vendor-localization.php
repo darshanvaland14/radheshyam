@@ -1,0 +1,40 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Supported Languages
+    |--------------------------------------------------------------------------
+    |
+    | Get All of supported languages by your Application.
+    | You can set the default App language in `config/app.php` as
+    | ('locale' => 'en').
+    |
+    */
+
+    'supported_languages' => [
+        'ar',
+        'en' => [
+            'en-GB',
+            'en-US',
+        ],
+        'zh' => [
+            'zh-CN',
+        ],
+        'es',
+        'fr',
+        'fa',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enable/Disable Localization
+    |--------------------------------------------------------------------------
+    |
+    | Disable or Enable the localization
+    |
+    */
+
+    'localization_enabled' => env('LOCALIZATION_ENABLED', true),
+];

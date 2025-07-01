@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Containers\AppSection\Tenantuser\Actions;
+
+use App\Containers\AppSection\Tenantuser\Models\Tenantusers;
+use App\Containers\AppSection\Tenantuser\Tasks\FindTenantusersByIdTask;
+use App\Ship\Parents\Actions\Action;
+use App\Ship\Parents\Requests\Request;
+
+class FindTenantusersByIdAction extends Action
+{
+    public function run(Request $request)
+    {
+        return app(FindTenantusersByIdTask::class)->run($request->id);
+    }
+}

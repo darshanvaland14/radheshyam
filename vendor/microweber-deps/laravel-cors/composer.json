@@ -1,0 +1,47 @@
+{
+    "name": "microweber-deps/laravel-cors",
+    "description": "Fork of fruitcake/laravel-cors  Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+    "keywords": ["laravel", "cors", "crossdomain", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fruitcake",
+            "homepage": "https://fruitcake.nl"
+        },
+        {
+            "name": "Barry vd. Heuvel",
+            "email": "barryvdh@gmail.com"
+        }
+    ],
+    "require": {
+        
+        "fruitcake/php-cors": "^1.2"
+    },
+ 
+    "autoload": {
+        "psr-4": {
+            "Fruitcake\\Cors\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fruitcake\\Cors\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        },
+        "laravel": {
+            "providers": [
+              "Fruitcake\\Cors\\CorsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=psr12 src/",
+        "fix-style": "phpcbf -p --standard=psr12 src/"
+    },
+    "minimum-stability": "dev"
+}

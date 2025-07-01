@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Containers\{{section-name}}\{{container-name}}\Tests\Functional\API;
+
+use App\Containers\{{section-name}}\{{container-name}}\Tests\Functional\ApiTestCase;
+use PHPUnit\Framework\Attributes\CoversNothing;
+
+#[CoversNothing]
+class {{class-name}} extends ApiTestCase
+{
+    protected string $endpoint = 'method@endpoint';
+
+    protected array $access = [
+        'permissions' => null,
+        'roles' => null,
+    ];
+
+    public function testABC(): void
+    {
+        $data = [
+            // 'key' => 'value',
+        ];
+
+        $response = $this->makeCall($data);
+
+        $response->assertOk();
+    }
+}
