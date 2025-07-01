@@ -76,7 +76,7 @@ class ProxyLoginForTenantWebClientAction extends ParentAction
                         $hotelData[$i]['value'] = $this->encode($hotel[$i]->id);
                     }
                     $responseContent['hotel'] = $hotelData;
-                }
+                } 
             }
 
             $user_id = $this->encode((int)$userData->id);
